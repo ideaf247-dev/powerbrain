@@ -1,19 +1,17 @@
 export default function Home() {
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '100vh',
-      fontFamily: 'sans-serif'
+    <div style={{ 
+      display: 'flex', 
+      height: '100vh', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      flexDirection: 'column', 
+      backgroundColor: '#f5f5f5',
+      color: '#333'
     }}>
-      <h1>🚀 Welcome to PowerBrain MVP</h1>
-      <p>Your AI-driven business growth system is live.</p>
-      <div style={{ marginTop: '20px' }}>
-        <a href="/hce" style={{ marginRight: '15px', color: '#0070f3' }}>Go to HCE Module</a>
-        <a href="/admin" style={{ color: '#0070f3' }}>Go to Admin Dashboard</a>
-      </div>
+      <h1>🚀 PowerBrain is Live!</h1>
+      <p>Welcome to your MVP deployment on Vercel.</p>
     </div>
   );
 }
+
