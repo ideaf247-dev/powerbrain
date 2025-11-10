@@ -1,6 +1,4 @@
 import dynamic from "next/dynamic";
-
-// Import HCE App dynamically (avoids SSR issues on Vercel)
 const HCEApp = dynamic(() => import("../modules/hce/App"), { ssr: false });
 
 export default function HCEPage() {
@@ -10,3 +8,4 @@ export default function HCEPage() {
     </div>
   );
 }
+
