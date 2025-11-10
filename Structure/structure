@@ -1,15 +1,15 @@
-/powerbrain_nextjs_project
+powerbrain_nextjs_project/
 │
-├── pages/
-│   ├── index.jsx
-│   └── hce.jsx        ✅ (calls the HCE App)
+├─ pages/
+│   ├─ index.jsx
+│   ├─ admin.jsx
+│   ├─ hce.jsx
 │
-├── modules/
-│   └── hce/
-│       └── App.jsx    ✅ (the fixed missing file)
+├─ modules/
+│   └─ hce/
+│       └─ App.jsx
 │
-├── styles/
-│   └── globals.css
-│
-├── package.json
-└── tailwind.config.js
+├─ package.json
+├─ next.config.js
+└─ vercel.json
+
