@@ -1,12 +1,17 @@
-import DashboardWidgets from '@/components/DashboardWidgets';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { auth } from '../firebase';
 
-export default function Dashboard() {
+export default function Dashboard(){
+  const router = useRouter();
+  useEffect(()=> {
+    const unsub = auth.onAuthStateChanged(user => {
+      if (!user) router.push('/');
+    });
+    return () => unsub();
+  }, [router]);
   return (
-    <div>
-      <h1>📈 PowerBrain Analytics Dashboard</h1>
-      <p className="subtitle">Monitor, visualize, and optimize your systems.</p>
-      <DashboardWidgets />
-    </div>
+    <div>...dashboard content...</div>
   );
 }
 
