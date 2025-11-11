@@ -1,16 +1,10 @@
 export default function Home() {
   return (
-    <div style={{
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      fontFamily: 'Arial, sans-serif'
-    }}>
-      <h1>🚀 PowerBrain is Live!</h1>
-      <p>This confirms your Next.js + Vercel deployment is working.</p>
-      <a href="/hce">Go to HCE Module</a>
+    <div className="text-center mt-24">
+      <h1 className="text-5xl font-bold text-gray-800">💡 PowerBrain Workspace</h1>
+      <p className="mt-4 text-gray-600">
+        Welcome to your creative and analytical hub. Navigate using the top bar to explore modules.
+      </p>
     </div>
   );
 }
