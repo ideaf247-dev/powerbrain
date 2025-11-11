@@ -1,4 +1,4 @@
-import DashboardWidgets from '@/components/DashboardWidgets';
+import DashboardWidgets from '../components/DashboardWidgets';
 
 export default function Dashboard() {
   return (
