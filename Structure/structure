@@ -1,11 +1,14 @@
-powerbrain_nextjs_project/
-pages/
- ├── index.jsx         → Home
- ├── hce.jsx           → HCE Module
- ├── dashboard.jsx     → Dashboard
-components/
- ├── Layout.jsx        → Navigation layout wrapper
- ├── Navbar.jsx        → Top bar with navigation
- ├── DashboardWidgets.jsx
-/styles
- ├── globals.css
+powerbrain/
+ ┣ pages/
+ ┃ ┣ _app.js
+ ┃ ┣ index.jsx
+ ┃ ┣ dashboard.jsx
+ ┃ ┗ hce.jsx
+ ┣ components/
+ ┃ ┣ Layout.jsx
+ ┃ ┗ DashboardWidgets.jsx
+ ┣ styles/
+ ┃ ┗ globals.css
+ ┣ package.json
+ ┣ next.config.js
+ ┗ jsconfig.json (optional)
