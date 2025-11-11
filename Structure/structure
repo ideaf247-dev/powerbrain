@@ -6,3 +6,6 @@ pages/
 components/
  ├── Layout.jsx        → Navigation layout wrapper
  ├── Navbar.jsx        → Top bar with navigation
+ ├── DashboardWidgets.jsx
+/styles
+ ├── globals.css
