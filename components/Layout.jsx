@@ -1,10 +1,14 @@
+import Sidebar from './Sidebar';
+import Topbar from './Topbar';
+
 export default function Layout({ children }) {
   return (
-    <div style={{ padding: '20px' }}>
-      <nav>
-        <a href="/">Home</a> | <a href="/hce">HCE</a> | <a href="/dashboard">Dashboard</a>
-      </nav>
-      <main>{children}</main>
+    <div className="layout">
+      <Sidebar />
+      <div className="main-content">
+        <Topbar />
+        <div className="page-body">{children}</div>
+      </div>
     </div>
   );
 }
